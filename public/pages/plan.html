@@ -7,10 +7,10 @@
 </div>
 <div class="controllers">
   <p class="blue_1 instruct">Set destination by clicking on the map or enter your latitude and longiture below</p>
-  <input type="text" placeholder="Enter airport location here.(Optional)" ng-model="">
+  <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model=""><a href="" id="add_button"><img src="AddWht-sym.svg"></a>
   <div class="latlng_filed">
-    <div class="inline_field"><span>Latitude</span><input type="text" class="left_input" placeholder=" Enter here" ng-model="in_lat"></div>
-    <div class="inline_field"><span>Longitude</span><input type="text"  placeholder=" Enter here" ng-model="in_lng"><a href="" id="add_button"><img src="AddWht-sym.svg"></a></div>
+    <div class="inline_field"><span>Latitude</span><input type="number" class="left_input" placeholder=" Enter here" ng-model="in_lat"></div>
+    <div class="inline_field right_field"><span>Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href="" id="add_button"><img src="AddWht-sym.svg"></a></div>
   </div>
 </div>
 <!-- <div class="container">
