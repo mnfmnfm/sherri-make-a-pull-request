@@ -286,6 +286,8 @@ app.controller('MapController',[ '$scope','$http' ,function($scope,$http) {
 app.controller('PlanController',['$scope','$http', function($scope,$http) {
   //getting user
   var user = document.getElementById('user').getAttribute("value");
+  $scope.name = document.getElementById('name').getAttribute("value");
+
   $scope.save_flag=false;
   $scope.success_save=false;
   $scope.routeName = null;
