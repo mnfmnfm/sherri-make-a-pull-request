@@ -49,13 +49,13 @@ a.brand-logo {
 
 #map {
   height:93vh;
-  width:65%;
+  width:75%;
   float:right;
 }
 
 #actions{
   height:93vh;
-  width: 35%;
+  width: 25%;
   float:left;
   background:#2980B9;
   overflow-y: scroll;
@@ -86,6 +86,14 @@ a.brand-logo {
   text-align: center;
   margin:0;
   padding:20px;
+}
+.controllers{
+  padding:20px;
+}
+.instruct{
+  padding:40px;
+  text-align: center;
+  font-size: 20px;
 }
 ////////////colors//////////////////
 .blue_1{
