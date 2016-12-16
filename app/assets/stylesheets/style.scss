@@ -110,6 +110,7 @@ a.brand-logo {
 .latlng_filed{
   width:100%;
   padding:0px;
+  margin-bottom:30px;
 }
 .inline_field{
 
@@ -134,6 +135,19 @@ input.airport_input{
 #add_button{
   border-bottom:1px solid #2C3E50;
   padding-bottom: 14px;
+}
+
+.btn{
+  display: block;
+  margin:0 auto;
+  background: beige;
+  border-radius: 3px;
+  color:#444;
+  text-transform: none;
+}
+.clear_icon{
+  padding-left:5px;
+  vertical-align:middle;
 }
 ////////////colors//////////////////
 .blue_1{
