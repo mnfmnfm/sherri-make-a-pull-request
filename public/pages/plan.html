@@ -1,5 +1,5 @@
 <div class="user_info">
-  <img class="avatar" src="https://s3-us-west-2.amazonaws.com/airplanner/Guest-sym.svg">
+  <img class="avatar" src="Guest-sym.svg">
   <p class="blue_1"> Hi {{name}}!</p>
 </div>
 <div class="title">
@@ -7,17 +7,17 @@
 </div>
 <div class="controllers">
   <p class="blue_1 instruct">Set destination by clicking on the map or enter your latitude and longiture below</p>
-  <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model=""><a href="" id="add_button"><img src="http://s3.amazonaws.com/airplanner/AddWht-sym.svg"></a>
+  <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model=""><a href="" id="add_button"><img src="AddWht-sym.svg"></a>
   <div class="latlng_filed">
     <div class="inline_field"><span>Latitude</span><input type="number" class="left_input" placeholder=" Enter here" ng-model="in_lat"></div>
-    <div class="inline_field right_field"><span>Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href="" id="add_button"><img src="http://s3.amazonaws.com/airplanner/AddWht-sym.svg"></a></div>
+    <div class="inline_field right_field"><span>Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href="" id="add_button"><img src="AddWht-sym.svg"></a></div>
   </div>
-  <button class="btn">Clear Coordinates<img class="clear_icon" src="http://s3.amazonaws.com/airplanner/ClearDrk-sym.svg"></button>
+  <button class="btn">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
 </div>
 <div class="coordinates_table  ">
   <table class="coordinates-table responsive-table">
     <tr>
-     <th class="noborder_left"><img src="http://s3.amazonaws.com/airplanner/Marker-sym.svg"></th><th> Latitude </th><th> Longitude </th><th class="noborder_right"> Distance </th>
+     <th class="noborder_left"><img src="Marker-sym.svg"></th><th> Latitude </th><th> Longitude </th><th class="noborder_right"> Distance </th>
     </tr>
     <tbody>
      <tr ng-repeat="c in coordinates">
@@ -31,13 +31,13 @@
     <span>Total Distance:</span><span class="distance_field">{{totalDistance}}m</span>
     <div class="unit_box"><a class="unit" href="">Miles</a> <a class="unit" href="">Kilometers</a></div>
   </div>
-  <div class="inline_field speed_field"><span>Speed</span><input type="number"  placeholder=" Enter speed in knots" ng-model="speed"><a href="" id="add_button"><img src="http://s3.amazonaws.com/airplanner/AddWht-sym.svg"></a></div>
+  <div class="inline_field speed_field"><span>Speed</span><input type="number"  placeholder=" Enter speed in knots" ng-model="speed"><a href="" id="add_button"><img src="AddWht-sym.svg"></a></div>
   <div class="time_data">
-    <button class="btn time"> Calculate travel time<img src="http://s3.amazonaws.com/airplanner/TravelTimeWht-sym.svg"> </button> <span class="time_result"> 0 hr: 0 min </span>
+    <button class="btn time"> Calculate travel time<img src="TravelTimeWht-sym.svg"> </button> <span class="time_result"> 0 hr: 0 min </span>
   </div>
   <div class="clear_controllers">
-  <button class="btn clear1">Clear Coordinates<img class="clear_icon" src="http://s3.amazonaws.com/airplanner/ClearDrk-sym.svg"></button>
-  <button class="btn clear2">Reset map<img class="clear_icon" src="http://s3.amazonaws.com/airplanner/ResetDrk-sym.svg"></button>
+  <button class="btn clear1">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
+  <button class="btn clear2">Reset map<img class="clear_icon" src="ResetDrk-sym.svg"></button>
   </div>
   <div>
     <button class="btn save">Save route</button>
