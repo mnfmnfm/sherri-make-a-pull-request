@@ -225,12 +225,13 @@ th.noborder_right{
 }
 .clear1{
   float:left;
-  display: inline;
+  display: inline-block;
   width:50%;
+
 }
 .clear2{
   float: right;
-  display: inline;
+  display:inline-block;
   width:40%;
 }
 .save{
