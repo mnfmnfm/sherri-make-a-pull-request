@@ -3,7 +3,7 @@
   <p class="blue_1"> Hi {{name}}!</p>
 </div>
 <div class="title">
-  <h4> Creat Flight Plan </h4>
+  <h4> Create Flight Plan </h4>
 </div>
 <div class="controllers">
   <p class="blue_1 instruct">Set destination by clicking on the map or enter your latitude and longiture below</p>
@@ -13,6 +13,19 @@
     <div class="inline_field right_field"><span>Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href="" id="add_button"><img src="AddWht-sym.svg"></a></div>
   </div>
   <button class="btn">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
+</div>
+<div class="coordinates_table  ">
+  <table class="coordinates-table responsive-table">
+    <tr>
+     <th class="noborder_left"><img src="Marker-sym.svg"></th><th> Latitude </th><th> Longitude </th><th class="noborder_right"> Distance </th>
+    </tr>
+    <tbody>
+     <tr ng-repeat="c in coordinates">
+        <td><span>{{marker_list[$index].label}}</span></td><td><span>{{c.lat.toFixed(3)}}</span></td><td><span>{{c.lng.toFixed(3)}}</span></td><td>{{distances[$index]}} m</td>
+        <td><a href=""  ng-click="removeNode($index);" style="color:#fff;">X</a></td>
+     </tr>
+    </tbody>
+  </table>
 </div>
 <!-- <div class="container">
  <h5 class="action-title">Plan New Route</h5>

@@ -140,14 +140,32 @@ input.airport_input{
 .btn{
   display: block;
   margin:0 auto;
-  background: beige;
+  background: #D1D1D1;
   border-radius: 3px;
   color:#444;
   text-transform: none;
+  margin-bottom:40px;
 }
 .clear_icon{
   padding-left:5px;
   vertical-align:middle;
+}
+.coordinates-table{
+   width:90%;
+   margin:0 auto;
+}
+.coordinates-table th {
+  color:#fff;
+  padding:10px;
+  border:1px solid #000;
+  border-top: none;
+  background:#3498DB;
+}
+th.noborder_left{
+  border-left:none;
+}
+th.noborder_right{
+  border-right:none;
 }
 ////////////colors//////////////////
 .blue_1{
