@@ -192,6 +192,32 @@ th.noborder_right{
 .speed_field{
   margin-left:10px;
 }
+.time_data{
+  margin:20px 10px;
+}
+.time{
+  float:left;
+  background: #2C3E50;
+  color:#fff;
+  width:75%;
+  height: 45px;
+}
+.time img{
+  vertical-align: middle;
+  padding-left:10px;
+}
+.time_result{
+  background: #fff;
+  border:none;
+  color:#000;
+  float:right;
+  width:22%;
+  vertical-align: middle;
+  padding-top:10px;
+  text-align: center;
+  height:45px;
+  border-radius: 3px;
+}
 ////////////colors//////////////////
 .blue_1{
   color:#00FFFA;
