@@ -146,12 +146,15 @@ div.right_field{
   margin-left:-5px;
 }
 input.airport_input{
-  width:96%;
+  width:95%;
+  display: inline-block;
+
 }
 #add_button{
-  width:4%;
+  width:6%;
   border-bottom:1px solid #2C3E50;
   padding-bottom: 14px;
+  margin-left:-5px;
 }
 
 .btn{
