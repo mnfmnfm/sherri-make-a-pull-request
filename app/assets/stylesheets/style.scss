@@ -35,13 +35,6 @@ a.signup{
    border-radius: 3px;
 }
 
-/*.title{
-  font-family:ideal sans-serif;
-  text-align: center;
-  padding:200px;
-  color:#fff;
-  font-size: 80px;
-}*/
 .logo{
   clear:both;
   display: block;
@@ -110,25 +103,27 @@ a.brand-logo {
 .latlng_filed{
   width:100%;
   padding:0px;
-  margin-bottom:30px;
+  margin-bottom:20px;
 }
 .inline_field{
   padding:0px;
   display:inline-block;
-  width:50%;
+
 }
 .inline_field input{
-  width:68%;
+  width:60%;
   margin:0;
   padding:0;
   display: inline-block;
+
+
 }
 .distance_data{
-    border:none;
-    border-bottom: 1px solid #2C3E50;
-    padding-bottom:20px;
-    padding-top: 10px;
-    margin:20px 12px;
+  border:none;
+  border-bottom: 1px solid #2C3E50;
+  padding-bottom:20px;
+  padding-top: 10px;
+  margin:20px 12px;
 }
 .distance_data span{
   border:none;
@@ -138,12 +133,14 @@ a.brand-logo {
   padding-left:20px;
 }
 input.left_input{
+  width:74%;
   border:none;
   border-bottom:1px solid #2C3E50;
-  border-right:1px solid #2C3E50;
+  border-right:1px solid #2C3E50
 }
 div.right_field{
   margin-left:-5px;
+  width:57%;
 }
 input.airport_input{
   width:95%;
@@ -151,10 +148,11 @@ input.airport_input{
 
 }
 #add_button{
-  width:6%;
+  width:4%;
   border-bottom:1px solid #2C3E50;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   margin-left:-5px;
+  display: inline-block;
 }
 
 .btn{

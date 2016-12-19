@@ -12,8 +12,12 @@
     <a href="" id="add_button"><img src="AddWht-sym.svg"></a>
   </div>
   <div class="latlng_filed">
-    <div class="inline_field"><span>Latitude</span><input type="number" class="left_input" placeholder=" Enter here" ng-model="in_lat"></div>
-    <div class="inline_field right_field"><span>Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href="" id="add_button"><img src="AddWht-sym.svg"></a></div>
+    <div  style="width:60%" class="inline_field col m6">
+      <span>Latitude</span><input type="number" class="left_input" min="1" placeholder=" Enter here" ng-model="in_lat">
+    </div>
+    <div style="width:40%" class="inline_field right_field col m6">
+      <span>Longitude</span><input type="number" style="width:50%" min="1" placeholder=" Enter here" ng-model="in_lng"><a href="" style="width:20%" id="add_button"><img src="AddWht-sym.svg"></a>
+    </div>
   </div>
   <button class="btn">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
 </div>
