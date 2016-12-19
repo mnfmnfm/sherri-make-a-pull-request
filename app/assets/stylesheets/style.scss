@@ -115,10 +115,13 @@ a.brand-logo {
 .inline_field{
   padding:0px;
   display:inline-block;
+  width:50%;
 }
 .inline_field input{
-  width:40%;
-  margin:0px;
+  width:68%;
+  margin:0;
+  padding:0;
+  display: inline-block;
 }
 .distance_data{
     border:none;
