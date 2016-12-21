@@ -169,6 +169,11 @@ border-bottom: 1px solid #3498DB;
 box-shadow: none;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 #add_button{
   width:4%;
@@ -277,6 +282,7 @@ th.noborder_right{
 .save:hover{
   background: #99fffd;
 }
+
 ////////////colors//////////////////
 .blue_1{
   color:#00FFFA;
