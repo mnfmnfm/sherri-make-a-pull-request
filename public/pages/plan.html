@@ -1,3 +1,4 @@
+
 <div class="user_info">
   <img class="avatar" src="Guest-sym.svg">
   <p class="blue_1"> Hi {{name}}!</p>
@@ -5,10 +6,11 @@
 <div class="title">
   <h4> Create Flight Plan </h4>
 </div>
+<div class="wrapper2">
 <div class="controllers">
   <p class="blue_1 instruct">Set destination by clicking on the map or enter your latitude and longiture below</p>
   <div style="width:100%;">
-    <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model="">
+    <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model="airport">
     <a href="" id="add_button"><img src="AddWht-sym.svg"></a>
   </div>
   <div class="latlng_filed">
@@ -49,46 +51,4 @@
   <div>
     <button class="btn save">Save route</button>
   </div>
-<!-- <div class="container">
- <h5 class="action-title">Plan New Route</h5>
-  <label class="plan-label"> Name your route:</label>
-  <input type="text" placeholder="eg: LA to NY" ng-model="routeName">
-  <p>  Use the map to select locations you have in mind or enter lat and lng below: </p>
 </div>
-<div class="container plan">
-  <table class="coordinates-table responsive-table">
-    <tr>
-     <th> <i class="material-icons">room</i></th><th> Lat </th><th> Lng </th><th> Distance </th>
-    </tr>
-    <tbody>
-     <tr ng-repeat="c in coordinates">
-        <td><span>{{marker_list[$index].label}}</span></td><td><span>{{c.lat.toFixed(3)}}</span></td><td><span>{{c.lng.toFixed(3)}}</span></td><td>{{distances[$index]}} m</td>
-        <td><a href=""  ng-click="removeNode($index);" style="color:#fff;">X</a></td>
-     </tr>
-    </tbody>
-  </table>
-    <div class="location-fields">
-      <span><b>Lat:</b></soan>
-      <input type="number" name="lat" class="location_input" placeholder="Enter lat" ng-model="in_lat">
-      <span><b>Lng:</b></soan>
-      <input type="number" name="lng" class="location_input" placeholder="Enter lng" ng-model="in_lng">
-      <a class="waves-effect waves-light btn  blue-grey darken-3 location_submit" title="Add location to table" ng-click="getUserData();"> + </a>
-    </div>
-</div>
-<div ng-show="save_flag" class="location-fields">
-  <p style="text-align:center;"> Total Distance & Time</p>
-    <span><b> Total Distance:  </b> </span> <span>{{totalDistance}} miles</span>
-    <div>
-    <span><b>Speed:  </b></soan>
-    <input type="number" min="1" id="speed_input" placeholder="Enter Speed in Knot" ng-model="speed">
-    <span><b>Time:  </b>{{travelTime}} hr</span>
-    <a class="waves-effect waves-light btn  blue-grey darken-3 location_submit" title="Calculate Travel Time"  ng-click="calcSpeed();"><i class="material-icons">av_timer</i></a> <br>
-  </div>
-</div>
-<div style="text-align:center;">
-  <a class="waves-effect waves-light btn  blue-grey darken-3 plan_button" ng-show="save_flag" ng-click="saveRoute();">Save Route</a>
-  <a href="" class="waves-effect waves-light teal darken-3 btn plan_button"  ng-click="clearMarkerAndPoly(null,'actions');">Clear Table</a>
-  <a class="waves-effect waves-light btn plan_button teal darken-1" ng-click="refreshMap();"> Reset Map </a>
-</div>
-<p class="green_alert" ng-show="success_save"> New Route Saved Successfully </p>
-<p class="red_alert"  ng-show="error_save"> Oops!Something went wrong, please try again!</p> -->
