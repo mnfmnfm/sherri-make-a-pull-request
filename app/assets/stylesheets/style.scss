@@ -69,6 +69,7 @@ a.brand-logo {
   float:left;
   background:#2980B9;
   overflow-y: scroll;
+  overflow-x: scroll;
   display: inline-block;
 }
 
@@ -193,6 +194,8 @@ input[type=number]::-webkit-outer-spin-button {
   color:#444;
   text-transform: none;
   margin-bottom:40px;
+  min-height:40px;
+  overflow:hidden;
 }
 .btn:hover{
   background: #f2f2f2;
@@ -238,7 +241,7 @@ th.noborder_right{
   background: #2C3E50;
   color:#fff;
   width:75%;
-  height: 45px;
+  min-height: 45px;
 }
 .time:hover{
   background: #486684;
@@ -279,7 +282,7 @@ th.noborder_right{
   color:#444;
   width:95%;
   font-size: 20px;
-  height:50px;
+  min-height:50px;
 }
 .save:hover{
   background: #99fffd;
@@ -289,6 +292,9 @@ th.noborder_right{
 .blue_1{
   color:#00FFFA;
 }
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 
+   .time_result{
+     display: block;
+   }
 }
