@@ -187,6 +187,9 @@ box-shadow: none;
   text-transform: none;
   margin-bottom:40px;
 }
+.btn:hover{
+  background: #f2f2f2;
+}
 .clear_icon{
   padding-left:5px;
   vertical-align:middle;
@@ -230,6 +233,9 @@ th.noborder_right{
   width:75%;
   height: 45px;
 }
+.time:hover{
+  background: #486684;
+}
 .time img{
   vertical-align: middle;
   padding-left:10px;
@@ -263,10 +269,13 @@ th.noborder_right{
 }
 .save{
   background: #00FFFA;
-  color:#2C3E50;
+  color:#444;
   width:95%;
   font-size: 20px;
   height:50px;
+}
+.save:hover{
+  background: #99fffd;
 }
 ////////////colors//////////////////
 .blue_1{
