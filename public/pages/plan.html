@@ -11,16 +11,16 @@
   <p class="blue_1 instruct">Set destination by clicking on the map or enter your latitude and longiture below</p>
   <div style="width:100%;">
     <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model="airport">
-    <a href="" id="add_button"><img src="AddWht-sym.svg"></a>
+    <a href="" class="add_button"><img src="AddWht-sym.svg"></a>
   </div>
-  <div class="latlng_filed">
-    <div  style="width:60%" class="inline_field col m6">
-      <span>Latitude</span><input type="number" class="left_input" placeholder=" Enter here" ng-model="in_lat">
+
+    <div class="inline_field left_field">
+      <span>Latitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lat">
     </div>
-    <div style="width:40%" class="inline_field right_field col m6">
-      <span>Longitude</span><input type="number" style="width:30%"  placeholder=" Enter here" ng-model="in_lng"><a href="" style="width:20%" id="add_button"><img src="AddWht-sym.svg"></a>
+    <div class="inline_field right_field">
+      <span>Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href=""  id="add_button"><img src="AddWht-sym.svg"></a>
     </div>
-  </div>
+
   <button class="btn">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
 </div>
 <div class="coordinates_table  ">
@@ -40,7 +40,7 @@
     <span>Total Distance:</span><span class="distance_field">{{totalDistance}}m</span>
     <div class="unit_box"><a class="unit" href="">Miles</a> <a class="unit" href="">Kilometers</a></div>
   </div>
-  <div class="inline_field speed_field"><span>Speed</span><input type="number"  placeholder=" Enter speed in knots" ng-model="speed"><a href="" id="add_button"><img src="AddWht-sym.svg"></a></div>
+  <div class="inline_field speed_field"><span>Speed</span><input type="number"  placeholder=" Enter speed in knots" ng-model="speed"><a href="" class="add_button"><img src="AddWht-sym.svg"></a></div>
   <div class="time_data">
     <button class="btn time"> Calculate travel time<img src="TravelTimeWht-sym.svg"> </button> <span class="time_result"> 0 hr: 0 min </span>
   </div>

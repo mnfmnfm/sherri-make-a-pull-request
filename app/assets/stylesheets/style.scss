@@ -15,6 +15,9 @@ span {
 input[type=number],input[type=text]{
   border:none;
   border-bottom: 1px solid #2C3E50;
+  padding-left:5px;
+  width:auto;
+
 }
 .wrapper{
   background-image: url(image_path('landing.jpg'));
@@ -66,6 +69,7 @@ a.brand-logo {
   float:left;
   background:#2980B9;
   overflow-y: scroll;
+  display: inline-block;
 }
 
 .login-landing-page{
@@ -108,16 +112,13 @@ a.brand-logo {
   margin-bottom:20px;
 }
 .inline_field{
-  padding:0px;
   display:inline-block;
-
+}
+.inline_field span{
+  display: inline;
 }
 .inline_field input{
-  width:60%;
-  margin:0;
-  padding:0;
-  display: inline-block;
-
+  display: inline;
 
 }
 .distance_data{
@@ -135,17 +136,19 @@ a.brand-logo {
   padding-left:20px;
 }
 input.left_input{
-  width:74%;
   border:none;
   border-bottom:1px solid #2C3E50;
-  border-right:1px solid #2C3E50
+
+}
+div.left_field{
+    // border-right:1px solid #2C3E50;
+    // width:200px;
 }
 div.right_field{
-  margin-left:-5px;
-  width:57%;
+    // width:200px;
 }
 input.airport_input{
-  width:95%;
+  width:90%;
   display: inline-block;
 
 }
@@ -175,12 +178,11 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-#add_button{
-  width:4%;
-  border-bottom:1px solid #2C3E50;
+.add_button{
+  // border-bottom:1px solid #2C3E50;
   padding-bottom: 12px;
   margin-left:-5px;
-  display: inline-block;
+  display: inline;
 }
 
 .btn{
