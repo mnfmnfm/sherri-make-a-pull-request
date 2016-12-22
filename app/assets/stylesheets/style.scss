@@ -114,6 +114,7 @@ a.brand-logo {
 }
 .inline_field{
   display:inline-block;
+  width:215px;
 }
 .inline_field span{
   display: inline;
@@ -123,17 +124,8 @@ a.brand-logo {
 
 }
 
-input.left_input{
-  border:none;
-  border-bottom:1px solid #2C3E50;
-
-}
-div.left_field{
-    // border-right:1px solid #2C3E50;
-    // width:200px;
-}
-div.right_field{
-    // width:200px;
+.right_field{
+  width:45%;
 }
 input.airport_input{
   width:90%;
@@ -155,9 +147,10 @@ input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
 // border-bottom: 1px solid #f00;
 // box-shadow: 0 1px 0 0 #f00;
-border-bottom: 1px solid #3498DB;
+border-bottom:none;
 box-shadow: none;
 margin:0 0 5px 0;
+font-size: 14px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -167,7 +160,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .add_button{
-
   margin-left:-5px;
   display: inline;
 }

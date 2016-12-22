@@ -9,17 +9,16 @@
 <div class="wrapper2">
 <div class="controllers">
   <p class="blue_1 instruct">Set destination by clicking on the map or enter your latitude and longiture below</p>
-  <div style="width:100%;" class="boarder">
-    <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model="airport">
-    <a href="" class="add_button"><img src="AddWht-sym.svg"></a>
-  </div>
-  <div class="lng-long">
-    <div class="inline_field left_field boarder">
+  <div >
+    <div class="inline_field boarder">
       <span>Latitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lat">
     </div>
     <div class="inline_field right_field boarder">
-      <span>Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href=""  id="add_button"><img src="AddWht-sym.svg"></a>
+      <span>Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href=""  class="add_button"><img src="AddWht-sym.svg"></a>
     </div>
+  </div>
+  <div style="width:100%;" class="boarder lng-long">
+    <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model="airport"><a href="" class="add_button"><img src="AddWht-sym.svg"></a>
   </div>
   <button class="btn add-margin">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
 </div>
