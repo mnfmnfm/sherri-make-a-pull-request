@@ -36,7 +36,7 @@
 </div>
 <div class="row">
   <div class="distance_data">
-    <div><span>Total Distance:</span><span class="distance_field">{{totalDistance}}m</span></div>
+    <div><span>Total Distance:</span><span class="distance_field">{{totalDistance.toFixed(3)}}m</span></div>
     <!-- <div class="unit_box"><a class="unit" href="">Miles</a> <a class="unit" href="">Kilometers</a></div> -->
   </div>
   <div class="speed_field">
@@ -48,8 +48,8 @@
     <button class="btn time"> Calculate travel time<img src="TravelTimeWht-sym.svg"> </button> <span class="time_result"> 0 hr: 0 min </span>
   </div>
   <div class="clear_controllers">
-  <button class="btn clear1">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
-  <button class="btn clear2">Reset map<img class="clear_icon" src="ResetDrk-sym.svg"></button>
+   <button class="btn clear1">Clear Coordinates</button><img class="clear_icon1" src="ClearDrk-sym.svg">
+   <button class="btn clear1 clear2">Reset map</button><img class="clear_icon1" src="ResetDrk-sym.svg">
   </div>
   <div>
     <button class="btn save">Save route</button>
