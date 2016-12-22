@@ -9,17 +9,19 @@
 <div class="wrapper2">
 <div class="controllers">
   <p class="blue_1 instruct">Set destination by clicking on the map or enter your latitude and longiture below</p>
-  <div style="width:100%;">
+  <div style="width:100%;" class="boarder">
     <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model="airport">
     <a href="" class="add_button"><img src="AddWht-sym.svg"></a>
   </div>
-    <div class="inline_field left_field">
+  <div class="lng-long">
+    <div class="inline_field left_field boarder">
       <span>Latitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lat">
     </div>
-    <div class="inline_field right_field">
+    <div class="inline_field right_field boarder">
       <span>Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href=""  id="add_button"><img src="AddWht-sym.svg"></a>
     </div>
-  <button class="btn">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
+  </div>
+  <button class="btn add-margin">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
 </div>
 <div class="coordinates_table  ">
   <table class="coordinates-table responsive-table">
@@ -36,10 +38,10 @@
 </div>
 <div class="row">
   <div class="distance_data">
-    <div><span>Total Distance:</span><span class="distance_field">{{totalDistance.toFixed(3)}}m</span></div>
+    <div class="boarder pad"><span>Total Distance:</span><span class="distance_field">{{totalDistance.toFixed(3)}}m</span></div>
     <!-- <div class="unit_box"><a class="unit" href="">Miles</a> <a class="unit" href="">Kilometers</a></div> -->
   </div>
-  <div class="speed_field">
+  <div class="speed_field boarder">
     <span>Speed</span><input type="number"  placeholder=" Enter speed in knots" ng-model="speed">
     <a href="" class="add_button"><img src="AddWht-sym.svg"></a>
   </div>

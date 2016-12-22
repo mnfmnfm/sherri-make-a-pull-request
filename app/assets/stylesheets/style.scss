@@ -4,20 +4,20 @@ html, body {
   padding: 0;
   font-family: 'Asap', sans-serif;
 }
+
 span {
   color:#000;
-  border-bottom: 1px solid #2C3E50;
   margin:0px;
   display: inline;
-  padding-bottom: 14px;
+  padding-bottom: 5px;
   padding-left:2px;
   font-size: 13px;
 }
 input[type=number],input[type=text]{
   border:none;
-  border-bottom: 1px solid #2C3E50;
   padding-left:5px;
   width:auto;
+  margin:  0 0 5px 0;
 }
 .wrapper{
   background-image: url(image_path('landing.jpg'));
@@ -122,23 +122,7 @@ a.brand-logo {
   display: inline;
 
 }
-.distance_data{
-  display:  inline-block;
-  width:45%;
-  border:none;
-  border-bottom: 1px solid #2C3E50;
-  padding-bottom:20px;
-  padding-top: 10px;
-  margin-top:20px;
-  float:left;
-}
-.distance_data span{
-  border:none;
-}
-.distance_field{
-  color:#fff;
-  padding-left:5px;
-}
+
 input.left_input{
   border:none;
   border-bottom:1px solid #2C3E50;
@@ -154,7 +138,6 @@ div.right_field{
 input.airport_input{
   width:90%;
   display: inline-block;
-
 }
 
 input:not([type]):focus:not([readonly]),
@@ -174,6 +157,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 // box-shadow: 0 1px 0 0 #f00;
 border-bottom: 1px solid #3498DB;
 box-shadow: none;
+margin:0 0 5px 0;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -211,6 +195,9 @@ input[type=number]::-webkit-outer-spin-button {
   vertical-align:middle;
   margin-bottom: 40px;
 }
+.lng-long{
+  margin-bottom:50px;
+}
 .coordinates-table{
    width:95%;
    margin: 0 auto;
@@ -237,10 +224,29 @@ input[type=number]::-webkit-outer-spin-button {
   color:#fff;
   text-decoration: underline;
 }
+.distance_data{
+  display:  inline-block;
+  width:45%;
+  border:none;
+  padding-bottom:10px;
+  padding-top: 27px;
+  margin:0 0 5px 0;
+  float:left;
+}
+.distance_data span{
+  border:none;
+}
+.pad{
+  padding-bottom:40px;
+}
+.distance_field{
+  color:#fff;
+  padding-left:5px;
+}
 .speed_field{
  display: inline-block;
  float: right;
- padding-bottom:17px;
+ padding-bottom:10px;
  padding-top: 8px;
  margin-top:20px;
 }
@@ -282,8 +288,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 .clear1{
-
   display: inline-block;
+  padding:5px;
 }
 .clear2{
   margin-left:12%;
@@ -298,7 +304,9 @@ input[type=number]::-webkit-outer-spin-button {
 .save:hover{
   background: #99fffd;
 }
-
+.boarder{
+  border-bottom: 1px solid #2C3E50;
+}
 ////////////colors//////////////////
 .blue_1{
   color:#00FFFA;
