@@ -5,7 +5,7 @@ html, body {
   font-family: 'Asap', sans-serif;
 }
 span {
-  color:#fff;
+  color:#000;
   border-bottom: 1px solid #2C3E50;
   margin:0px;
   display: inline;
@@ -67,7 +67,7 @@ a.brand-logo {
   height:93vh;
   width: 28%;
   float:left;
-  background:#2980B9;
+  background:#3498DB;
   overflow-y: scroll;
   overflow-x: scroll;
   display: inline-block;
@@ -93,7 +93,7 @@ a.brand-logo {
   text-align: center;
 }
 .title{
-  background:#3498DB;
+  background:#2980B9;
   color:#fff;
   text-align: center;
   margin:0;
@@ -123,11 +123,14 @@ a.brand-logo {
 
 }
 .distance_data{
+  display:  inline-block;
+  width:40%;
   border:none;
   border-bottom: 1px solid #2C3E50;
   padding-bottom:20px;
   padding-top: 10px;
-  margin:20px 12px;
+  margin-top:20px;
+  float:left;
 }
 .distance_data span{
   border:none;
@@ -180,8 +183,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .add_button{
-  // border-bottom:1px solid #2C3E50;
-  padding-bottom: 12px;
+
   margin-left:-5px;
   display: inline;
 }
@@ -209,21 +211,21 @@ input[type=number]::-webkit-outer-spin-button {
    margin: 0 auto;
 }
 .coordinates-table th {
-  color:#fff;
+  color:#000;
   padding:10px;
-  border:1px solid #2C3E50;
+//  border:1px solid #2C3E50;
   border-top: none;
   background:#3498DB;
 }
-th.noborder_left{
-  border-left:none;
-}
-th.noborder_right{
-  border-right:none;
-}
+// th.noborder_left{
+//   border-left:none;
+// }
+// th.noborder_right{
+//   border-right:none;
+// }
 .unit_box{
-  display: inline;
-  float:right;
+  float:left;
+  margin-top:25px;
 }
 .unit{
   padding-right:10px;
@@ -231,7 +233,11 @@ th.noborder_right{
   text-decoration: underline;
 }
 .speed_field{
-  margin-left:10px;
+ display: inline-block;
+ float: right;
+ padding-bottom:17px;
+ padding-top: 8px;
+ margin-top:20px;
 }
 .time_data{
   margin:20px 10px;

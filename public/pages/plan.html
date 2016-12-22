@@ -13,14 +13,12 @@
     <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model="airport">
     <a href="" class="add_button"><img src="AddWht-sym.svg"></a>
   </div>
-
     <div class="inline_field left_field">
       <span>Latitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lat">
     </div>
     <div class="inline_field right_field">
       <span>Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href=""  id="add_button"><img src="AddWht-sym.svg"></a>
     </div>
-
   <button class="btn">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
 </div>
 <div class="coordinates_table  ">
@@ -36,11 +34,16 @@
     </tbody>
   </table>
 </div>
+<div class="row">
   <div class="distance_data">
-    <span>Total Distance:</span><span class="distance_field">{{totalDistance}}m</span>
-    <div class="unit_box"><a class="unit" href="">Miles</a> <a class="unit" href="">Kilometers</a></div>
+    <div><span>Total Distance:</span><span class="distance_field">{{totalDistance}}m</span></div>
+    <!-- <div class="unit_box"><a class="unit" href="">Miles</a> <a class="unit" href="">Kilometers</a></div> -->
   </div>
-  <div class="inline_field speed_field"><span>Speed</span><input type="number"  placeholder=" Enter speed in knots" ng-model="speed"><a href="" class="add_button"><img src="AddWht-sym.svg"></a></div>
+  <div class="speed_field">
+    <span>Speed</span><input type="number"  placeholder=" Enter speed in knots" ng-model="speed">
+    <a href="" class="add_button"><img src="AddWht-sym.svg"></a>
+  </div>
+</div>
   <div class="time_data">
     <button class="btn time"> Calculate travel time<img src="TravelTimeWht-sym.svg"> </button> <span class="time_result"> 0 hr: 0 min </span>
   </div>
