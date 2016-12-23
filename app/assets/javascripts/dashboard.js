@@ -293,7 +293,7 @@ app.controller('PlanController',['$scope','$http', function($scope,$http) {
   $scope.routeName = null;
   $scope.route ={};
   $scope.speed;
-  $scope.travelTime;
+  $scope.travelTime="0 hr : 0 m";
   $scope.error_save=false;
  // listening for any changes on the marker list and updating the view
   $scope.$on("flightapp:newmarker", function(event,data) {
@@ -354,9 +354,14 @@ app.controller('PlanController',['$scope','$http', function($scope,$http) {
       }
      }
 
- $scope.calcSpeed = function(){
+ $scope.calcTravelTime = function(){
     var mph = $scope.speed * 1.152;
-    $scope.travelTime = ($scope.totalDistance / mph).toFixed(3);
+    var min = 0,hr = 0;
+    min  = (($scope.totalDistance / mph)*60);
+    hr = Math.floor(min / 60);
+    min = Math.ceil(min - (hr*60));
+    $scope.travelTime = hr+" hr: "+min+" m";
+
  }
 
  $scope.removeNode=function(node_index){
@@ -365,6 +370,7 @@ app.controller('PlanController',['$scope','$http', function($scope,$http) {
     $scope.coordinates.splice(node_index,1);
     $scope.$emit("flightapp:updatemap_repaint");
   }
+
 }]);
 
 //PlanController.$inject = ['$scope', '$http'];

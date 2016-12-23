@@ -16,5 +16,6 @@
 //= require_tree .
 
 $(document).on("turbolinks:load", function() {
+  console.log("loaded")
   $('.modal').modal();
 });

@@ -9,17 +9,17 @@
 <div class="wrapper2">
 <div class="controllers">
   <p class="blue_1 instruct">Set destination by clicking on the map or enter your latitude and longiture below</p>
-  <div >
+  <div class='user_coor'>
     <div class="inline_field boarder">
       <span>Latitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lat">
     </div>
     <div class="inline_field right_field boarder">
-      <span style="display:inline;">Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href=""  class="add_button"><img src="AddWht-sym.svg"></a>
+      <span style="display:inline;">Longitude</span><input type="number"  placeholder=" Enter here" ng-model="in_lng"><a href="" ng-click="getUserData();" class="add_button"><img src="AddWht-sym.svg"></a>
     </div>
   </div>
-  <div style="width:100%;" class="boarder lng-long">
+  <!-- <div style="width:100%;" class="boarder lng-long">
     <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model="airport"><a href="" class="add_button"><img src="AddWht-sym.svg"></a>
-  </div>
+  </div> -->
   <button class="btn add-margin">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
 </div>
 <div class="coordinates_table  ">
@@ -46,13 +46,20 @@
   </div>
 </div>
   <div class="time_data">
-    <button class="btn time"> Calculate travel time<img src="TravelTimeWht-sym.svg"> </button> <span class="time_result"> 0 hr: 0 min </span>
+    <button ng-click="calcTravelTime();" class="btn time"> Calculate travel time<img src="TravelTimeWht-sym.svg"> </button> <span class="time_result"> {{travelTime}}</span>
   </div>
   <div class="clear_controllers">
-   <button class="btn clear1">Clear Coordinates</button><img class="clear_icon1" src="ClearDrk-sym.svg">
-   <button class="btn clear1 clear2">Reset map</button><img class="clear_icon1" src="ResetDrk-sym.svg">
+   <button ng-click="clearMarkerAndPoly(null,'actions');"class="btn clear1">Clear Coordinates</button><img class="clear_icon1" src="ClearDrk-sym.svg">
+   <button ng-click="refreshMap();" class="btn clear1 clear2">Reset map</button><img class="clear_icon1" src="ResetDrk-sym.svg">
   </div>
   <div>
-    <button class="btn save">Save route</button>
+    <button id="save"  class="btn save">Save route</button>
+    <div  id="modal1" class="modal">
+       <div class="modal-content">
+         <h4>{{name}}</h4>
+         <p>A bunch of text</p>
+       </div>
+     </div>
   </div>
 </div>
+<script>
