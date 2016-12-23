@@ -57,21 +57,24 @@ a.brand-logo {
  text-align: center;
 }
 
-#map {
-  height:93vh;
-  width:72%;
-  float:right;
-}
-
 #actions{
   height:93vh;
-  width: 28%;
+  width:25%;
+  width:550px ;
   float:left;
   background:#3498DB;
   overflow-y: scroll;
   overflow-x: scroll;
   display: inline-block;
 }
+
+#map {
+  height:93vh;
+  width:75%;
+  width:calc(100% - 550px);
+  float:right;
+}
+
 
 .login-landing-page{
   width:200px;
