@@ -155,7 +155,10 @@ box-shadow: none;
 margin:0 0 5px 0;
 font-size: 14px;
 }
-
+input.signup_field{
+  border-bottom: 1px solid #9e9e9e;
+  width:100%;
+}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
