@@ -209,12 +209,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-top: none;
   background:#3498DB;
 }
-// th.noborder_left{
-//   border-left:none;
-// }
-// th.noborder_right{
-//   border-right:none;
-// }
+
 .unit_box{
   float:left;
   margin-top:25px;
@@ -306,6 +301,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .boarder{
   border-bottom: 1px solid #2C3E50;
+}
+.delete-link{
+  padding-left:10px;
+}
+.reset_save{
+  text-align: center;
+  margin:0 auto;
+  padding-top: 100px;
+}
+.route_item{
+  border: none;
+  border-bottom: 1px solid #2980B9;
+  padding-bottom: 10px;
 }
 ////////////colors//////////////////
 .blue_1{
