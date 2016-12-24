@@ -310,8 +310,7 @@ app.controller('PlanController',['$scope','$http', function($scope,$http) {
  $scope.saveRoute=function(){
   var route_id=null;
    //creating route if id is not available
-   if ($scope.routeName)
-     {
+       $scope.routeName=prompt("Please name this route");
       $http({
            method: "POST",
            url: "/routes",
@@ -340,9 +339,7 @@ app.controller('PlanController',['$scope','$http', function($scope,$http) {
            $scope.error_save=true;
            $scope.success_save=false;
        });
-    }else {
-      alert("name the route");
-    }
+
  }
 
    $scope.getUserData = function(){
@@ -470,6 +467,5 @@ app.controller('WeatherController',['$scope', '$http',function($scope,$http) {
        }
     }
 
-}]);
 
-//WeatherController.$inject = ['$scope', '$http'];
+}]);
