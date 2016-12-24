@@ -303,7 +303,10 @@ app.controller('PlanController',['$scope','$http', function($scope,$http) {
         $scope.success_save=false;
     });
   });
-
+   $scope.clearUserInput=function(){
+     $scope.in_lat=null;
+     $scope.in_lng=null;
+   }
    $scope.refreshMap =function(){
      $scope.$emit("flightapp:resetMap");
    }

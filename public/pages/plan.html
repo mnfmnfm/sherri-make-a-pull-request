@@ -20,7 +20,7 @@
   <!-- <div style="width:100%;" class="boarder lng-long">
     <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model="airport"><a href="" class="add_button"><img src="AddWht-sym.svg"></a>
   </div> -->
-  <button class="btn add-margin">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
+  <button ng-click="clearUserInput();" class="btn add-margin">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
 </div>
 <div class="coordinates_table  ">
   <table class="coordinates-table responsive-table">
@@ -29,8 +29,8 @@
     </tr>
     <tbody>
      <tr ng-repeat="c in coordinates">
-        <td><span>{{marker_list[$index].label}}</span></td><td><span>{{c.lat.toFixed(3)}}</span></td><td><span>{{c.lng.toFixed(3)}}</span></td><td>{{distances[$index]}} m</td>
-        <td><a href=""  ng-click="removeNode($index);" style="color:#fff;">X</a></td>
+        <td><span style="color:#fff;">{{marker_list[$index].label}}</span></td><td><span>{{c.lat.toFixed(3)}}</span></td><td><span>{{c.lng.toFixed(3)}}</span></td><td>{{distances[$index]}} m</td>
+        <td><a href=""  ng-click="removeNode($index);"><img src="DeleteWht-sym.svg"></a></td>
      </tr>
     </tbody>
   </table>
@@ -42,28 +42,14 @@
   </div>
   <div class="speed_field boarder">
     <span>Speed</span><input type="number"  placeholder=" Enter speed in knots" ng-model="speed">
-    <a href="" class="add_button"><img src="AddWht-sym.svg"></a>
   </div>
 </div>
   <div class="time_data">
     <button ng-click="calcTravelTime();" class="btn time"> Calculate travel time<img src="TravelTimeWht-sym.svg"> </button> <span class="time_result"> {{travelTime}}</span>
   </div>
   <div class="clear_controllers">
-   <button ng-click="clearMarkerAndPoly(null,'actions');"class="btn clear1">Clear Coordinates</button><img class="clear_icon1" src="ClearDrk-sym.svg">
-   <button ng-click="refreshMap();" class="btn clear1 clear2">Reset map</button><img class="clear_icon1" src="ResetDrk-sym.svg">
+   <button ng-click="clearMarkerAndPoly(null,'actions');"class="btn clear1">Clear Coordinates <img class="clear_icon" src="ClearDrk-sym.svg"></button>
+   <button ng-click="refreshMap();" class="btn clear1 clear2">Reset map <img class="clear_icon" src="ResetDrk-sym.svg"></button>
   </div>
   <div>
     <button id="save" ng-click="saveRoute();" class="btn save">Save route</button>
-<div modal-show="showDialog" class="modal fade">
-    <div  id="modal1" class="modal">
-       <div class="modal-content">
-         <h4>{{name}}</h4>
-         <p>A bunch of text</p>
-       </div>
-     </div>
-   </div>
-  </div>
-</div>
-<script>
- $(".modal").modal('open');
-</script>
