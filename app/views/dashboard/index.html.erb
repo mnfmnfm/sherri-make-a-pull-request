@@ -1,14 +1,14 @@
 <div class="main">
      <nav>
-        <div class="nav-wrapper blue-grey darken-4">
+        <div class="nav-wrapper">
           <a href="#" class="brand-logo"><%= image_tag "airplanner-logo-white150W.svg"%></a>
           <%= hidden_field_tag 'user',current_user.id %>
           <%= hidden_field_tag 'name',current_user.name %>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a ui-sref="map.newplan">+ New Route</a></li>
-            <li><a ui-sref="map.savedplan">Saved Routes</a></li>
+            <li><a ui-sref="map.newplan">Create Flight Plan</a></li>
+            <li><a ui-sref="map.savedplan">My Flight Plans</a></li>
             <li><a ui-sref="map.weather">Weather</a></li>
-            <li><a href="#modal3">Profile</a></li>
+            <!-- <li><a href="#modal3">Profile</a></li> -->
             <li><%= link_to "Log out", destroy_user_session_path,:method=>"delete"%></li>
           </ul>
         </div>
