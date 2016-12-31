@@ -2,13 +2,11 @@
 <div class="container">
   <h5 class="action-title">Your Saved Routes</h5>
   <div class="route_item" ng-repeat="route in allRoutes">
-   <h5 id="{{route.id}}"> <img src="Marker-sym.svg">  {{route.name}}     <span style="float:right">
+   <h5 class="saved_item {{route.id}}" id="{{route.id}}"> <img src="Marker-sym.svg">  {{route.name}}     <span style="float:right">
        <a href class="show-link" ng-click="getNodes(route.id);"> <img src="EyeWht-sym.svg"> </a>
        <a href class="delete-link" ng-click="removeRoute(route.id)"> <img src="DeleteWht-sym.svg"> </a>
      </span>
    </h5>
-
-
   </div>
 <div class="reset_save">
   <button ng-click="refreshMap();" class="btn clear1 clear2">Reset map <img class="clear_icon" src="ResetDrk-sym.svg"></button>
