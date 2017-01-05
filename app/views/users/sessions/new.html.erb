@@ -58,7 +58,7 @@
     <div class="modal-content">
       <p> Please remember you cannot save any plans when logged in as guest </p>
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        <%= f.email_field :email, autofocus: true,class:"guestlogin", value:"makhi@gmail.com"%>
+        <%= f.email_field :email, autofocus: true,class:"guestlogin", value:"guest@gmail.com"%>
         <%= f.password_field :password, autocomplete: "off" ,class:"guestlogin",value:"asdfgh"%>
         <%= f.submit "Got it", class:"center-button" %>
       <% end %>
