@@ -287,7 +287,7 @@ app.controller('PlanController',['$scope','$http', function($scope,$http) {
   //getting user
   var user = document.getElementById('user').getAttribute("value");
   $scope.name = document.getElementById('name').getAttribute("value");
-
+  $scope.notGuest = ($scope.name != "guest");
   $scope.save_flag=false;
   $scope.success_save=false;
   $scope.routeName = null;

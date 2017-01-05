@@ -32,15 +32,7 @@ input[type=number],input[type=text]{
 }
 
 h1 {margin:0px;}
-a.signup{
-   margin:10px;
-   float:right;
-   font-size: 20px;
-   color:#fff;
-   padding: 5px 10px;
-   background: rgba(0, 0, 102,0.5);
-   border-radius: 3px;
-}
+
 .wrapper2{
   padding:10px 25px;
 }
@@ -55,16 +47,29 @@ a.brand-logo {
   margin:5px 10px;
 }
 .options {
- margin: 0 auto;
- width:500px;
- padding:0px;
- text-align: center;
+   margin: 0 auto;
+   width:100%;
+   padding-top:50px;
+   text-align: center;
+   height:300px;
+   background:#2980B9;
+   position:absolute;
+   bottom:0px;
 }
-
+.guestlogin{
+  visibility: hidden;
+}
+#modal3{
+  width:30%;
+}
+.center-button{
+  display: block;
+  margin:0 auto;
+}
 #actions{
   height:93vh;
   width:25%;
-  width:550px ;
+  width:550px;
   float:left;
   background:#3498DB;
   overflow-y: scroll;
@@ -83,7 +88,9 @@ a.brand-logo {
 .login-landing-page{
   width:200px;
   font-size: 20px;
-  background: #000066;
+  background: #00FFFA;
+  border:none;
+  color:#000;
 }
 
 .action-title{
