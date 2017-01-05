@@ -52,4 +52,4 @@
    <button ng-click="refreshMap();" class="btn clear1 clear2">Reset map <img class="clear_icon" src="ResetDrk-sym.svg"></button>
   </div>
   <div>
-    <button id="save" ng-click="saveRoute();" class="btn save">Save route</button>
+    <button id="save" ng-show="notGuest" ng-click="saveRoute();" class="btn save">Save route</button>
