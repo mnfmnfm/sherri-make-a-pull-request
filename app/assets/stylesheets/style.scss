@@ -141,6 +141,9 @@ a.brand-logo {
 .right_field{
   width:45%;
 }
+#lng-pain{
+  width:70px;
+}
 input.airport_input{
   width:90%;
   display: inline-block;
@@ -177,8 +180,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .add_button{
-  margin-left:-5px;
-  display: inline;
+  margin-left:20px;
+vertical-align: middle;
 }
 .user_coor{
   margin-bottom: 30px;
