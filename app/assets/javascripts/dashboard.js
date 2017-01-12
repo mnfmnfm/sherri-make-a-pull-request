@@ -24,7 +24,11 @@ app.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $url
             url: "/user",
             templateUrl: "pages/user.html",
             controller: "UserController"
-        })
+        }).state("map.gps", {
+                    url: "/gps",
+                    templateUrl: "pages/gps.html",
+                    controller: "GPSController"
+                })
         .state("map.savedplan",{
             url: "/saved-plans",
             templateUrl: "pages/saved.html",
@@ -471,4 +475,11 @@ app.controller('WeatherController',['$scope', '$http',function($scope,$http) {
     }
 
 
+}]);
+
+app.controller('GPSController',['$scope', '$http',function($scope,$http) {
+  $scope.myfile;
+   $scope.sendGpsData = function(){
+    console.log($scope.myfile);
+  }
 }]);
