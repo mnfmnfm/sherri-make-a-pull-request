@@ -349,6 +349,7 @@ a.save{
     width:100%;
     float:right;
     position:absolute;
+    top:400px;
   }
   #map{
     width:100%;
@@ -356,7 +357,20 @@ a.save{
     position:absolute;
     height:350px;
   }
+  .user_info{
+    display: none;
+  }
+  .title h4{
+    font-size:18px;
+  }
+  .controllers{
+    padding:0px;
+  }
+  .wrapper2{
+    padding-top:5px;
+  }
   .instruct{
-  padding-top:70px;
+    font-size: 16px;
+    padding:20px;
   }
 }
