@@ -9,8 +9,6 @@
 <div class="wrapper2">
 <div class="controllers">
   <p class="blue_1 instruct">Set destination by clicking on the map or enter your latitude and longitude</p>
-
-
   <div class='user_coor row'>
     <div class="inline_field boarder">
       <div>
@@ -21,14 +19,13 @@
       <span>Longitude</span><input type="number" id="lng-pain"  placeholder="Enter here" ng-model="in_lng"> &nbsp&nbsp<a href="" ng-click="getUserData();" class="add_button"><img class="add_button" src="AddWht-sym.svg"></a>
     </div>
   </div>
-
   <!-- <div style="width:100%;" class="boarder lng-long">
     <input type="text" class="airport_input" placeholder="Enter airport location here.(Optional)" ng-model="airport"><a href="" class="add_button"><img src="AddWht-sym.svg"></a>
   </div> -->
   <button ng-click="clearUserInput();" class="btn add-margin">Clear Coordinates<img class="clear_icon" src="ClearDrk-sym.svg"></button>
 </div>
 <div class="coordinates_table  ">
-  <table class="coordinates-table responsive-table">
+  <table class="coordinates-table">
     <tr>
      <th class="noborder_left"><img src="Marker-sym.svg"></th><th> Latitude </th><th> Longitude </th><th class="noborder_right"> Distance </th>
     </tr>

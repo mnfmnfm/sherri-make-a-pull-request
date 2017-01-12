@@ -347,10 +347,30 @@ a.save{
 @media(max-width: 500px){
   #actions{
     width:100%;
-    float:none;
+    float:right;
+    position:absolute;
+    top:400px;
   }
   #map{
     width:100%;
-    float:none;
+    float:left;
+    position:absolute;
+    height:350px;
+  }
+  .user_info{
+    display: none;
+  }
+  .title h4{
+    font-size:18px;
+  }
+  .controllers{
+    padding:0px;
+  }
+  .wrapper2{
+    padding-top:5px;
+  }
+  .instruct{
+    font-size: 16px;
+    padding:20px;
   }
 }
