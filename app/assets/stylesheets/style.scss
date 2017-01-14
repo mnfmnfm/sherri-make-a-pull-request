@@ -55,6 +55,7 @@ a.brand-logo {
    background:#2980B9;
    position:absolute;
    bottom:0px;
+   color:#fff;
 }
 .guestlogin{
   visibility: hidden;
@@ -80,8 +81,8 @@ a.brand-logo {
 #map {
   height:95vh;
   width:auto;
- width:75%;
- width:calc(100% - 550px);
+  width:75%;
+  width:calc(100% - 550px);
   float:right;
 }
 
@@ -89,11 +90,21 @@ a.brand-logo {
 .login-landing-page{
   width:200px;
   font-size: 20px;
-  background: #00FFFA;
   border:none;
   color:#000;
+  width:150px;
+  margin:20px;
 }
 
+.btn1{
+    background: #00FFFA;
+}
+.btn2{
+    background: #00ccc9;
+}
+.btn3{
+    background:  #00807d;
+}
 .action-title{
   color:#fff;
   text-align: center;
@@ -344,7 +355,7 @@ a.save{
    }
 }
 
-@media(max-width: 500px){
+@media(max-width: 1100px){
   #actions{
     width:100%;
     float:right;
@@ -373,4 +384,8 @@ a.save{
     font-size: 16px;
     padding:20px;
   }
+}
+
+@media(max-width: 579px){
+  
 }
