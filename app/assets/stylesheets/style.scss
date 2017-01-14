@@ -51,7 +51,7 @@ a.brand-logo {
    width:100%;
    padding-top:50px;
    text-align: center;
-   height:300px;
+   min-height:300px;
    background:#2980B9;
    position:absolute;
    bottom:0px;
@@ -88,7 +88,6 @@ a.brand-logo {
 
 
 .login-landing-page{
-  width:200px;
   font-size: 20px;
   border:none;
   color:#000;
@@ -345,14 +344,8 @@ a.save{
   border-bottom: 1px solid #2980B9;
   padding-bottom: 10px;
 }
-////////////colors//////////////////
 .blue_1{
   color:#00FFFA;
-}
-@media (max-width: 900px) {
-   .time_result{
-     display: block;
-   }
 }
 
 @media(max-width: 1100px){
@@ -385,7 +378,30 @@ a.save{
     padding:20px;
   }
 }
+@media (max-width: 900px) {
+  .logo{
+    width:500px;
+  }
+   .time_result{
+     display: block;
+   }
+   .login-landing-page{
+     font-size: 16px;
+     width:150px;
+   }
+
+}
 
 @media(max-width: 579px){
-  
+  .logo{
+    width:400px;
+  }
+  .welcome{
+    font-size: 25px;
+  }
+  .login-landing-page{
+    font-size: 16px;
+    width:150px;
+  }
+
 }

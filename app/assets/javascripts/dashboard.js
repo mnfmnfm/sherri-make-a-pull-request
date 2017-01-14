@@ -1,7 +1,6 @@
 //services
 var app = angular.module("flightApp", ["ui.router"]);
 
-
 app.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state("map", {
