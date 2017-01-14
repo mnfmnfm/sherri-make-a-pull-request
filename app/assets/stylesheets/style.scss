@@ -361,7 +361,7 @@ a.save{
     width:100%;
     float:left;
     position:absolute;
-    height:350px;
+    height:400px;
   }
   .user_info{
     display: none;
@@ -385,6 +385,12 @@ a.save{
 
 }
 @media (max-width: 900px) {
+  #map{
+    width:100%;
+    float:left;
+    position:absolute;
+    height:350px;
+  }
   .logo{
     width:500px;
   }
@@ -399,6 +405,12 @@ a.save{
 }
 
 @media(max-width: 579px){
+  #map{
+    width:100%;
+    float:left;
+    position:absolute;
+    height:350px;
+  }
   .logo{
     width:400px;
   }
