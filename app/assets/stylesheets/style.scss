@@ -150,7 +150,8 @@ a.brand-logo {
 }
 
 .right_field{
-  width:45%;
+  width:43%;
+  margin-left:20px;
 }
 #lng-pain{
   width:70px;
@@ -191,8 +192,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .add_button{
-  margin-left:20px;
-vertical-align: middle;
+//  margin-left:20px;
+  vertical-align: middle;
+  float:right;
+  margin-top:10px;
 }
 .user_coor{
   margin-bottom: 30px;
@@ -309,7 +312,6 @@ vertical-align: middle;
 }
 .clear1{
   display: inline-block;
-
   vertical-align: middle;
 }
 .clear_icon{
@@ -377,6 +379,10 @@ a.save{
     font-size: 16px;
     padding:20px;
   }
+  .save{
+    width:200px;
+  }
+
 }
 @media (max-width: 900px) {
   .logo{
