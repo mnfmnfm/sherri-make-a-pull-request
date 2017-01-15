@@ -40,7 +40,7 @@ h1 {margin:0px;}
   clear:both;
   display: block;
   margin:0 auto;
-  padding:100px;
+  padding-top:100px;
 
 }
 a.brand-logo {
@@ -385,6 +385,7 @@ a.save{
 
 }
 @media (max-width: 900px) {
+
   #map{
     width:100%;
     float:left;
@@ -401,10 +402,18 @@ a.save{
      font-size: 16px;
      width:150px;
    }
-
 }
-
+@media(max-width:699px){
+  .wrapper{
+    background-image:none;
+    background: #333399;
+  }
+  .options{
+    min-height:500px;
+  }
+}
 @media(max-width: 579px){
+
   #map{
     width:100%;
     float:left;

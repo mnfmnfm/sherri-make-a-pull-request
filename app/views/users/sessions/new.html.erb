@@ -4,7 +4,7 @@
   });
 </script>
 <div class="wrapper">
-     <div>
+     <div class="landing-img">
         <%= image_tag "airplanner-logo-white.png" ,:class => "logo" %>
      </div>
      <div class="options">
@@ -13,8 +13,6 @@
           <a class="waves-effect waves-light btn-large login-landing-page btn1" href="#modal3">Guest</a>
           <a class="waves-effect waves-light btn-large login-landing-page btn2" href="#modal1">Log in</a>
           <a class="waves-effect waves-light btn-large login-landing-page signup btn3" href="#modal2" >Sign up</a>
-         <!-- <a class="waves-effect waves-light btn-large   grey darken-2" href="dashboard.html">Login</a> -->
-     </div>
      <div id="modal1" class="modal">
       <div class="modal-content">
         <h5>Log in</h5>
@@ -24,7 +22,6 @@
           <label>Password:</label>
           <%= f.password_field :password, autocomplete: "off" %>
           <%= f.submit "Log in" %>
-
           <% if devise_mapping.rememberable? -%>
             <div class="field">
               <%= f.check_box :remember_me %>
