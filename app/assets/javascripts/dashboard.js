@@ -111,7 +111,7 @@ app.controller('MapController',[ '$scope','$http' ,function($scope,$http) {
         google.maps.event.addListener(map, 'click', function(event) {
             var new_marker ={lat:event.latLng.lat(),lng:event.latLng.lng() };
             //remove weather marker if any
-            console.log("from map controller", $scope.weather_marker);
+            //console.log("from map controller", $scope.weather_marker);
             if( $scope.weather_marker )
               {
                 $scope.weather_marker.setMap(null);
@@ -178,7 +178,7 @@ app.controller('MapController',[ '$scope','$http' ,function($scope,$http) {
            addPopUp(marker);
           }
 
-          console.log("from show nodes: ",$scope.coordinates)
+          //console.log("from show nodes: ",$scope.coordinates)
             var flightPath = new google.maps.Polyline({
                 path: $scope.coordinates,
                 geodesic: true,
@@ -215,7 +215,8 @@ app.controller('MapController',[ '$scope','$http' ,function($scope,$http) {
         }
         $scope.setMapForAll=function(map){
           for (var i = 0; i <  $scope.marker_list.length; i++) {
-          //  console.log($scope.marker_list[i])
+          //
+          // console.log($scope.marker_list[i])
             $scope.marker_list[i].setMap(map);
            }
            var flightPath = new google.maps.Polyline({
@@ -237,7 +238,7 @@ app.controller('MapController',[ '$scope','$http' ,function($scope,$http) {
         });
 
       $scope.$on("flightapp:updatemap_repaint",function(){
-          console.log("im in update now,repainting",$scope.coordinates);
+          //console.log("im in update now,repainting",$scope.coordinates);
           $scope.labelIndex=0;
           $scope.setMapForAll(map);
           $scope.distances=[0];
@@ -256,7 +257,7 @@ app.controller('MapController',[ '$scope','$http' ,function($scope,$http) {
                 map: map
             });
            $scope.marker_list.push(marker);
-           console.log("from addmarker",$scope.marker_list)
+           //console.log("from addmarker",$scope.marker_list)
            addPopUp(marker);
         }
 
@@ -325,7 +326,7 @@ app.controller('PlanController',['$scope','$http', function($scope,$http) {
            }
        }).success(function(data) {
             route_id=data.id;
-            console.log(data, " ",route_id);
+            //console.log(data, " ",route_id);
             // if success at the nodes to created route
             $http({
                     method: "POST",
@@ -459,7 +460,7 @@ app.controller('WeatherController',['$scope', '$http',function($scope,$http) {
                  method: "GET",
                  url: "//api.openweathermap.org/data/2.5/forecast?lat="+weather_location.lat+"&lon="+weather_location.lng +"&APPID="+api_key
                  }).success(function(data) {
-                     console.log("weather:  ",data);
+                    // console.log("weather:  ",data);
                      $scope.weather_location = data.city;
                      $scope.weather= data.list;
                      $scope.labelIndex=0;
@@ -479,6 +480,6 @@ app.controller('WeatherController',['$scope', '$http',function($scope,$http) {
 app.controller('GPSController',['$scope', '$http',function($scope,$http) {
   $scope.myfile;
    $scope.sendGpsData = function(){
-    console.log($scope.myfile);
+    //console.log($scope.myfile);
   }
 }]);
