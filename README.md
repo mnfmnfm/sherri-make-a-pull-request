@@ -1,4 +1,4 @@
-  ![](airplanner-logo-black.png)
+  ![](https://github.com/Sherri010/Flight-Planner-P/blob/master/airplanner-logo-black.png)
 
 AirPlanner is a SPA for planning flights.This application is created for planning short distance flights and to provide details about the route you have in mind by using Google Maps API.
 
@@ -19,13 +19,13 @@ you can find the application here:
 Nov 18 - Nov 29
 
 ### Data Models
-![](schema.png)
+![](https://github.com/Sherri010/Flight-Planner-P/blob/master/schema.png)
 
 *User model is created using devise, here the most important fielad are mentions.
 
 ### Wireframes:
-![](homepage.png)
-![](wire.png)
+![](https://github.com/Sherri010/Flight-Planner-P/blob/master/homepage.png)
+![](https://github.com/Sherri010/Flight-Planner-P/blob/master/wire.png)
 
 Map is always fixed on the right section and using the navigation bar you can switch to different parts of the app.
 
