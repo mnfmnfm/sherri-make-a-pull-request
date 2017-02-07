@@ -153,10 +153,10 @@ in dashboard.js
 
 
 ### Time consuming bugs!!!!!!
-### airports
+
 
 # next steps:
- - have user upload files
- - set fixed locations for users
+ - allow user upload files
  - explore google earth to show GPS data
- - see other users routes if public
+ - Share routes with other users
+ - Extend this platform to other vehicles( cars, bike, or even for running )  
