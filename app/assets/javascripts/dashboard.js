@@ -111,7 +111,6 @@ app.controller('MapController',[ '$scope','$http' ,function($scope,$http) {
         google.maps.event.addListener(map, 'click', function(event) {
             var new_marker ={lat:event.latLng.lat(),lng:event.latLng.lng() };
             //remove weather marker if any
-            //console.log("from map controller", $scope.weather_marker);
             if( $scope.weather_marker )
               {
                 $scope.weather_marker.setMap(null);
@@ -178,7 +177,6 @@ app.controller('MapController',[ '$scope','$http' ,function($scope,$http) {
            addPopUp(marker);
           }
 
-          //console.log("from show nodes: ",$scope.coordinates)
             var flightPath = new google.maps.Polyline({
                 path: $scope.coordinates,
                 geodesic: true,
@@ -215,8 +213,6 @@ app.controller('MapController',[ '$scope','$http' ,function($scope,$http) {
         }
         $scope.setMapForAll=function(map){
           for (var i = 0; i <  $scope.marker_list.length; i++) {
-          //
-          // console.log($scope.marker_list[i])
             $scope.marker_list[i].setMap(map);
            }
            var flightPath = new google.maps.Polyline({
@@ -233,12 +229,10 @@ app.controller('MapController',[ '$scope','$http' ,function($scope,$http) {
 
         //event listener for deleting marker from unsaved route
         $scope.$on("flightapp:updatemap_remove",function(){
-          //console.log("im in update now,removing all nodes first");
           $scope.clearMarkerAndPoly(null);
         });
 
       $scope.$on("flightapp:updatemap_repaint",function(){
-          //console.log("im in update now,repainting",$scope.coordinates);
           $scope.labelIndex=0;
           $scope.setMapForAll(map);
           $scope.distances=[0];
@@ -257,7 +251,6 @@ app.controller('MapController',[ '$scope','$http' ,function($scope,$http) {
                 map: map
             });
            $scope.marker_list.push(marker);
-           //console.log("from addmarker",$scope.marker_list)
            addPopUp(marker);
         }
 
@@ -326,7 +319,6 @@ app.controller('PlanController',['$scope','$http', function($scope,$http) {
            }
        }).success(function(data) {
             route_id=data.id;
-            //console.log(data, " ",route_id);
             // if success at the nodes to created route
             $http({
                     method: "POST",
